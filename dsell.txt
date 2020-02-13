@@ -37,7 +37,7 @@
       "dataName": "diamonds",
       "changeType": "1",
       "value": "tempVars(\"sold\")",
-      "name": "Control Global Data"
+      "name": "Control Member Data"
     },
     {
       "channel": "0",
