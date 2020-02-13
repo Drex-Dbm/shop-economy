@@ -16,7 +16,7 @@
     {
       "member": "1",
       "varName": "",
-      "dataName": "gold",
+      "dataName": "diamonds",
       "comparison": "4",
       "value": "0",
       "iftrue": "0",
@@ -37,12 +37,27 @@
       "dataName": "gold",
       "changeType": "1",
       "value": "tempVars(\"sold\")",
-      "name": "Control Member Data"
+      "name": "Control Global Data"
+    },
+    {
+      "dataName": "diamonds",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Global Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "diamonds",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "left",
+      "name": "Store Member Data"
     },
     {
       "channel": "0",
       "varName": "",
-      "message": "you have sold ${tempVars(\"d\")} diamonds and earned ${tempVars(\"sold\")}$",
+      "message": "you have sold ${tempVars(\"d\")} diamonds and earned ${tempVars(\"sold\")}$\n\nyou have ${tempVars(\"left\")} diamonds now",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
