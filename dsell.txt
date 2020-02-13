@@ -1,0 +1,66 @@
+{
+  "name": "dsell",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "AYPgl",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "diamonds",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "d",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "diamonds",
+      "comparison": "4",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"d\")}",
+      "info": "2",
+      "SecondNumber": "100",
+      "storage": "1",
+      "varName": "sold",
+      "name": "Basic Math Operation"
+    },
+    {
+      "dataName": "gold",
+      "changeType": "1",
+      "value": "tempVars(\"sold\")",
+      "name": "Control Global Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "you have sold ${tempVars(\"d\")} diamonds and earned ${tempVars(\"sold\")}$",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "you have no diamonds \n",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}

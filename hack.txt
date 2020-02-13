@@ -1,0 +1,138 @@
+{
+  "name": "hack",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "kxRtz",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "gun",
+      "comparison": "4",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "12",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "ammo",
+      "comparison": "4",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "14",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "gold",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "memusr",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "gold",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "usr",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "taken",
+      "min": "1000",
+      "max": "7000",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "gold",
+      "changeType": "1",
+      "value": "-tempVars(\"taken\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "gold",
+      "changeType": "1",
+      "value": "tempVars(\"taken\")",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "101010101010",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "you hacked ${mentionedUser} and recieved ${tempVars(\"stolen\")} from their credit card\n\nyour bal -> ${tempVars(\"usr\")}\ntheir bal -> ${tempVars(\"memusr\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "you dont have a gun \nbuy one via >>>[p]buy gun",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "you have no ammo buy some via >>>[p]buy ammo",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}

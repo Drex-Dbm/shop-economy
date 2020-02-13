@@ -1,0 +1,47 @@
+{
+  "name": "shop",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "iIBjJ",
+  "actions": [
+    {
+      "title": "😀",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "[1000$] mask - needed to commit crimes\n[1000$] ammo pack - 20 bullets each pack\n[1500$] pickaxe - tool for mining\n[2000$] gun - a rifle used to shoot users\n[2500$] pc - another way of robbing users\n\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
