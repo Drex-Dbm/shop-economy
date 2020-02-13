@@ -34,7 +34,7 @@
       "name": "Basic Math Operation"
     },
     {
-      "dataName": "diamonds",
+      "dataName": "gold",
       "changeType": "1",
       "value": "tempVars(\"sold\")",
       "name": "Control Member Data"
