@@ -5,6 +5,16 @@
   "_id": "FPazK",
   "actions": [
     {
+      "message": "0",
+      "value": "300",
+      "whattodo": "0",
+      "call": "9",
+      "storage": "1",
+      "varName": "wait",
+      "source": "FPazK",
+      "name": "Set Time Restriction"
+    },
+    {
       "member": "1",
       "varName": "",
       "dataName": "pick",
@@ -47,7 +57,26 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "buy a pickaxe via >>>e!buy pick",
+      "message": "buy a pickaxe via >>> [p]buy pick",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "time": "${tempVars(\"wait\")}",
+      "storage": "1",
+      "varName": "wait-convert",
+      "name": "Convert Seconds To D/H/M/S"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "please wait ${tempVars(\"wait-convert\")}",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
