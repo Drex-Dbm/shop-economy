@@ -16,7 +16,7 @@
     {
       "member": "1",
       "varName": "",
-      "dataName": "diamonds",
+      "dataName": "gold",
       "comparison": "4",
       "value": "0",
       "iftrue": "0",
